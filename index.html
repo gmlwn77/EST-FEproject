@@ -269,15 +269,15 @@
             right: 24px;
             bottom: 180px;
             z-index: 5;
-        }
-
-        #bar > img {
+            background-image: url("./img/scroll-top-btn.png");
             width: 50px;
             height: 50px;
         }
 
-        #bar > img:hover {
-
+        #bar-top:hover {
+            background-image: url("./img/scroll-top-btn-b.png");
+            width: 50px;
+            height: 50px;
         }
 
 
@@ -379,9 +379,31 @@
         <img id="bell7" src="./img/bell7.jpeg" width="1920px" height="340px" />
     </section>
 
-    <div id="bar-top">
-        <img src="./img/scroll-top-btn.png" alt="" />
-    </div>
+    <div id="bar-top"></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        <!-- 버튼 숨긴 상태 -->
+        $(document).ready(function() {
+            $("#bar-top").hide();
+        });
+
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 100) {
+                $("#bar-top").fadeIn();
+            }
+            else {
+                $("#bar-top").fadeOut();
+            }
+        });
+
+        <!-- 스크롤 탑 기능-->
+        $("#bar-top").click(function() {
+            $('html,body').animate( {
+                scrollTop: 0
+            }, 200);
+            return false;
+        });
+    </script>
 
     <footer>
         <img src="./img/bell_white.JPG" width="226px" height="70px"/>
