@@ -30,9 +30,6 @@
         }
 
         header {
-            position: sticky;
-            top: 0px;
-            z-index: 10;
             background-color: rgba(242, 233, 216, 1);
             width: 1920px;
             height: 900px;
@@ -47,11 +44,18 @@
         }
 
         nav {
+            background-color: rgba(242, 233, 216, 1);
+            position: fixed;
+            width: 1920px;
             height: 102px;
+            padding: 0 320px 0 320px;
+            left: 0;
+            box-sizing: border-box;
             display: flex;
             font-size: 16px;
             align-items: center;
             justify-content: space-between;
+            z-index: 10;
         }
 
         nav > div > a {
