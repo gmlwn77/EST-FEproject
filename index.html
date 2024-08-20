@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bell</title>
+    <style>
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        button {
+            width: 140px;
+            height: 50px;
+            background-color: #D97652;
+            border: solid #D97652;
+            border-radius: 40px;
+            color: white;
+            font-size: 16px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            width: 1920px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: rgba(242, 233, 216, 1);
+            width: 1920px;
+            height: 900px;
+            padding: 0 320px 0 320px;
+            box-sizing: border-box;
+            gap: 40px;
+            background-image: url("./img/bell8.JPG");
+            background-repeat: no-repeat;
+            background-size: 500px;
+            background-origin: content-box;
+            background-position: right bottom;
+        }
+
+        nav {
+            height: 102px;
+            display: flex;
+            font-size: 16px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav > div > a {
+            margin-right: 30px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-top: 200px;
+        }
+        header > div > span {
+            font-size: 16px;
+        }
+
+        header > div > button{
+            margin-top: 40px;
+        }
+
+    /* 여기까지 header */
+
+        .section1 {
+            display: flex;
+            padding: 80px 320px 0 320px;
+            justify-content: space-between;
+        }
+
+        .section1 > img {
+            width: 660px;
+            height: 390px;
+            border-radius: 30px;
+            box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
+        ;
+        }
+
+        .section1 > div {
+            display: flex;
+            flex-direction: column;
+            font-size: 16px;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        h2 {
+            font-size: 36px;
+        }
+
+    /*  여기까지 section1*/
+
+        .section2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h3 {
+            font-size: 48px;
+            color: rgba(217, 118, 82, 1);
+            margin-top: 120px;
+            margin-bottom: 40px;
+        }
+        #text1 {
+            text-align: center;
+            margin-bottom: 88px;
+        }
+        #text1 > span {
+            color: rgba(217, 118, 82, 1);
+        }
+
+        .img1 {
+            display: flex;
+            gap: 73px;
+            margin-bottom: 72px;
+        }
+        .img2 {
+            display: flex;
+            gap: 73px;
+            margin-bottom: 100px;
+        }
+        .img1 > *, .img2 > * {
+            width: 378px;
+            height: 378px;
+            border-radius: 30px;
+            box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25) ;
+        }
+
+        #span2 {
+            font-size: 24px;
+            margin-bottom: 28px;
+        }
+
+    /*  여기까지 section2 */
+
+        hr{
+            width: 1280px;
+            height: 1px;
+            color: rgba(196, 196, 196, 1);
+            margin-top: 80px;
+            margin-bottom: 68px;
+        }
+
+    /*   여기까지 구분선  */
+
+        .map {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 320px 0 320px;
+            margin-bottom: 80px;
+        }
+
+        h4 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .map > span {
+            font-size: 16px;
+            margin-bottom: 48px;
+        }
+
+    /* 여기까지 map */
+
+        .section4 {
+            position: relative;
+        }
+
+        .section3 {
+            position: absolute;
+            display: flex;
+            width: 1280px;
+            height: 200px;
+            margin: 80px 320px 0 320px;
+            padding: 0 58px;
+            box-sizing: border-box;
+            background-color: rgba(38, 49, 64, 1);
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 30px;
+            z-index: 2;
+        }
+
+        h5 {
+            font-size: 36px;
+            color: rgba(255, 255, 255, 1);
+            margin: 0 0 18px 0;
+        }
+        .section3 > .left > span {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 1);
+        }
+        .section3 > .right {
+            display: flex;
+            width: 530px;
+            height: 60px;
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 60px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 6px 0 26px;
+        }
+
+        .right > div {
+            display: flex;
+            gap: 16px;
+        }
+
+        .right > div > input {
+            border: white;
+        }
+
+        .right > a {
+            width: 135px;
+            height: 50px;
+            background-color: #D97652;
+            font-size: 16px;
+            color: white;
+            border-radius: 40px;
+            padding: 15px 29px 15px 29px;
+            box-sizing: border-box;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #bell7 {
+            position: absolute;
+            margin-top: 181px;
+            z-index: 1;
+        }
+
+    /* 여기까지 section4 */
+
+        footer {
+            display: flex;
+            height: 160px;
+            padding: 521px 320px 0 320px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer > div > * {
+            background-color: #D97652;
+            width: 42px;
+            height: 42px;
+            padding: 9px;
+            box-sizing: border-box;
+            border-radius: 50%;
+            align-items: center;
+        }
+
+        footer > div {
+            display: flex;
+            gap: 20px;
+        }
+
+    /*   여기까지 footer */
+
+        #bar-top {
+            position: fixed;
+            right: 24px;
+            bottom: 180px;
+            z-index: 5;
+        }
+
+        #bar > img {
+            width: 50px;
+            height: 50px;
+        }
+
+        #bar > img:hover {
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./img/bell_b.JPG" alt="" width="130px" height="40px">
+            <div>
+            <a href="#" >Home</a>
+            <a href="#" >About</a>
+            <a href="#" >Support</a>
+            <button>Download</button>
+            </div>
+        </nav>
+        <div>
+            <h1>
+                Lorem Ipsum is simply
+                <br />
+                dummy text of the printing and
+            </h1>
+            <span>
+                Lorem Ipsum is simply dummy text of the printing and
+                <br />typesetting industry.
+                <br />Lorem Ipsum has been the industry's standard dummy text
+                <br />ever since the 1500s, when an unknown
+            </span>
+            <br>
+            <button>Download</button>
+        </div>
+    </header>
+
+    <section class="section1">
+        <img src="./img/bell7.jpeg" alt=""/>
+        <div>
+        <h2>
+            Lorem Ipsum is simply
+            <br>
+            dummy text of the printing
+            <br>
+            and dummy text
+        </h2>
+        <span>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            <br>industry.
+        </span>
+        </div>
+    </section>
+
+    <section class="section2">
+        <h3>
+            dummy text of the printing and dummy
+        </h3>
+        <div id="text1">
+            Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.
+            <br />
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+        </div>
+        <div class="img1">
+            <img src="./img/bell1.jpeg" alt=""/>
+            <img src="./img/bell2.jpeg" alt=""/>
+            <img src="./img/bell3.jpeg" alt=""/>
+        </div>
+        <div class="img2">
+            <img src="./img/bell4.jpeg" alt="" width="378px" height="378px"/>
+            <img src="./img/bell5.jpeg" alt="" width="378px" height="378px"/>
+            <img src="./img/bell6.jpeg" alt="" width="378px" height="378px"/>
+        </div>
+        <span id="span2"><strong>Continue exploring BELL</strong></span>
+        <button>Show more</button>
+    </section>
+
+    <hr>
+
+    <section class="map">
+        <h4>
+            Where you’ll be
+        </h4>
+        <span>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</span>
+        <a href="#" alt="">지도</a>
+    </section>
+
+    <section class="section4">
+        <section class="section3">
+            <div class="left">
+                <h5>Subscribe to our Blog post</h5>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                <br /> Lorem Ipsum has been the industry's standard dummy text </span>
+            </div>
+            <div class="right">
+                <div>
+                    <img src="./img/mail.png" width="24px" height="24px" />
+                    <input type="text" placeholder="Enter your e-mail address" />
+                </div>
+                    <a href="#">Subscribe</a>
+            </div>
+        </section>
+        <img id="bell7" src="./img/bell7.jpeg" width="1920px" height="340px" />
+    </section>
+
+    <div id="bar-top">
+        <img src="./img/scroll-top-btn.png" alt="" />
+    </div>
+
+    <footer>
+        <img src="./img/bell_white.JPG" width="226px" height="70px"/>
+        <div>
+        <img src="./img/blog.png"/>
+        <img src="./img/instagram.png"/>
+        <img src="./img/facebook.png"/>
+        <img src="./img/youtube.png"/>
+        </div>
+    </footer>
+
+</body>
+</html>
