@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mobile</title>
+    <style>
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        button {
+            width: 115px;
+            height: 40px;
+            color: white;
+            background-color: #D97652;
+            border: #D97652;
+            border-radius: 40px;
+        }
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            width: 390px;
+        }
+
+        header {
+            width: 390px;
+            height: 802px;
+            background-color: rgba(242, 233, 216, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url("./img/bell8.JPG");
+            background-repeat: no-repeat;
+            background-size: 200px 350px;
+            background-origin: content-box;
+            background-position: bottom;
+        }
+
+        nav {
+            position: fixed;
+            width: 390px;
+            height: 76px;
+            background-color: rgba(242, 233, 216, 1);
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-sizing: border-box;
+            align-items: center;
+            z-index: 5;
+        }
+
+        h1 {
+            margin: 0;
+            padding-top: 116px;
+            padding-bottom: 30px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        header > span {
+            padding-bottom: 30px;
+            text-align: center;
+        }
+
+    /*   여기까지 header */
+
+        .section1 {
+            margin: 40px 32px 60px 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .section1 > img {
+            width: 326px;
+            height: 190px;
+            border-radius: 18px;
+            box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        .section1 > span {
+            font-size: 14px;
+        }
+
+    /*    여기까지 section1 */
+
+        .section2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #D97652;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #span1 {
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        #text {
+            color: #D97652;
+        }
+
+        .img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .img > img {
+            width: 326px;
+            height: 326px;
+            border-radius: 18px;
+            box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        #span2 {
+            margin: 60px 0 28px 0;
+            font-size: 18px;
+        }
+
+    /*    section2 여기까지 */
+
+        hr {
+            width: 326px;
+            height: 1px;
+            margin: 60px 32px 0 32px;
+            text-align: center;
+        }
+
+    /*    여기까지 구분선 */
+
+        .map {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 40px 32px 0 32px;
+        }
+
+        h4 {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        .map > span {
+            font-size: 16px;
+            color: rgba(96, 99, 103, 1);
+        }
+        .map > a {
+            width: 326px;
+            height: 132px;
+            background-color: black;
+            margin-top: 28px;
+        }
+
+    /*    여기까지 map */
+
+        .section4 {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section3 {
+            position: absolute;
+            width: 326px;
+            height: 348px;
+            border-radius: 18px;
+            display: flex;
+            flex-direction: column;
+            padding: 36px 32px 30px 32px;
+            box-sizing: border-box;
+            margin-top: 40px;
+            z-index: 2;
+            background-color: rgba(38, 49, 64, 1);
+        }
+        h5{
+            margin: 0;
+            font-size: 24px;
+            color: white;
+        }
+        .section3 > span {
+            font-size: 14px;
+            color: white;
+            padding: 20px 0 40px 0;
+        }
+
+        .emailForm {
+            background-color: white;
+            height: 40px;
+            border-radius: 60px;
+            display: flex;
+            align-items: center;
+            padding-left: 16px;
+            margin-bottom: 20px;
+        }
+
+        #email {
+            margin-left: 14px;
+            width: 144px;
+            height: 16px;
+            font-size: 12px;
+        }
+
+        .emailBtn {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .section4 > img {
+            margin-top: 320px;
+            width: 390px;
+            height: 240px;
+        }
+
+    /*    여기까지 section3, 4  */
+
+        footer {
+            height: 178px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            margin: 30px 0 24px 20px;
+        }
+
+        .menu {
+            margin-top: 58px;
+            display: flex;
+            gap: 16px;
+        }
+        .menu > img {
+            width: 32px;
+            height: 32px;
+            background-color: rgba(242, 157, 82, 1);
+            border-radius: 50%;
+            box-sizing: border-box;
+            align-items: center;
+            padding: 6.86px;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            text-align: right;
+            margin: 30px 22px 28px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+      <nav>
+        <img src="./img/bell_b.JPG" alt="벨 로고"
+        width="92px" height="28px" >
+        <img src="./img/menu.png" alt="메뉴"
+        width="32px" height="32px">
+      </nav>
+
+      <h1>Lorem Ipsum is simply <br>dummy text<br>of the printing and</h1>
+      <span>Lorem Ipsum is simply dummy text<br>of the printing and typesetting industry.
+          <br>Lorem Ipsum has been the industry's<br>standard dummy text ever since the 1500s,
+          <br>when an unknown
+      </span>
+        <br>
+      <button>Download</button>
+    </header>
+
+    <section class="section1">
+        <img src="./img/bell7.jpeg" alt="벨이 가까이서 웃고있는 사진">
+        <h2>Lorem Ipsum is simply<br>dummy text of the printing<br>and dummy text</h2>
+        <span>Lorem Ipsum is simply dummy text of the printing<br> and typesetting industry.</span>
+    </section>
+
+    <section class="section2">
+        <h3>dummy text of the printing<br>and dummy</h3>
+        <span id="span1">Lorem Ipsum is simply <span id="text">dummy text</span> of the<br>printing and typesetting industry.
+            <br>Lorem Ipsum has been the industry's<br>standard dummy text ever since the 1500s,
+            <br>when an unknown</span>
+        <div class="img">
+            <img src="./img/bell1.jpeg" alt="어린 벨이 울타리에 기대있는 사진"/>
+            <img src="./img/bell2.jpeg" alt="계단에 누워있는 벨을 아래에서 찍은 사진"/>
+            <img src="./img/bell3.jpeg" alt="누워있는 벨 코를 가깝게 찍은 사진"/>
+            <img src="./img/bell4.jpeg" alt="터그놀이 중인 벨 사진" />
+            <img src="./img/bell5.jpeg" alt="기분이 안좋아서 째려보고있는 벨 사진" />
+            <img src="./img/bell6.jpeg" alt="주변에 장난감이 있고 밸은 웃고있는 사진" />
+        </div>
+        <span id="span2"><strong>Continue exploring BELL</strong></span>
+        <button>Show more</button>
+    </section>
+
+    <hr>
+
+    <section class="map">
+        <h4>Where you’ll be</h4>
+        <span>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</span>
+        <a href="#" alt="지도">지도</a>
+    </section>
+
+    <section class="section4">
+        <section class="section3">
+            <h5>Subscribe to our<br>Blog post</h5>
+            <span>Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.
+                <br>Lorem Ipsum has been the industry's<br> standard dummy text </span>
+            <form class="emailForm">
+                <img src="./img/mail.png" alt="메일 사진" width="18px" height="18px">
+                <input name="email" id="email" type="email" placeholder="Enter your e-mail address">
+            </form>
+            <div class="emailBtn"><button>Subscribe</button></div>
+        </section>
+        <img src="./img/bell7.jpeg" alt="벨이 가까이서 웃고있는 사진">
+    </section>
+
+    <footer>
+        <div class="left">
+            <img src="./img/bell_white.JPG" alt="벨 로고" width="112px" height="34px"/>
+            <div class="menu">
+                <img src="./img/blog.png" alt="블로그 이미지"/>
+                <img src="./img/instagram.png" alt="인스타그램 이미지"/>
+                <img src="./img/facebook.png" alt="페이스북 이미지"/>
+                <img src="./img/youtube.png" alt="유튜브 이미지"/>
+            </div>
+        </div>
+        <div class="right">
+            <span>About</span>
+            <span>Blog</span>
+            <span>Support</span>
+            <span>Terms of Use</span>
+        </div>
+    </footer>
+
+</body>
+</html>
