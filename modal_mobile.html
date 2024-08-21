@@ -56,5 +56,35 @@
         <span>Lorem Ipsum is simply dummy<br>text of the printing industry. </span>
         <button id="submitBtn">OK! I Love BELL</button>
     </section>
+
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', click);
+        // localStorage에서 이메일 값을 가져오기
+        function click() {
+            const email = localStorage.getItem('email');
+            console.log(email);
+            submit(email);
+        }
+
+        // 데이터 전송
+        function submit(email) {
+            fetch("https://eduapi.weniv.co.kr/717/blog", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    title: "email",
+                    email: email,
+                }),
+            })
+                .then((response) => response.json())
+                .then((json) => {
+                    console.log(json);
+                    window.location.href = 'mobile.html';
+                })
+                .catch((error) => console.error(error));
+        }
+    </script>
 </body>
 </html>

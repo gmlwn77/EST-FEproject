@@ -213,7 +213,7 @@
             font-size: 12px;
         }
 
-        .emailBtn {
+        #emailBtn {
             display: flex;
             justify-content: flex-end;
         }
@@ -322,10 +322,19 @@
                 <img src="./img/mail.png" alt="메일 사진" width="18px" height="18px">
                 <input name="email" id="email" type="email" placeholder="Enter your e-mail address">
             </form>
-            <div class="emailBtn"><button>Subscribe</button></div>
+            <div id="emailBtn"><button>Subscribe</button></div>
         </section>
         <img src="./img/bell7.jpeg" alt="벨이 가까이서 웃고있는 사진">
     </section>
+
+    <script>
+        document.getElementById('emailBtn').addEventListener('click', emailSubmit);
+        function emailSubmit() {
+            const email = document.getElementById("email");
+            localStorage.setItem('email', email.value);
+            window.location.href = 'modal_mobile.html';
+        }
+    </script>
 
     <footer>
         <div class="left">
