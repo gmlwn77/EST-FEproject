@@ -58,9 +58,24 @@
             z-index: 10;
         }
 
-        nav > div > a {
-            margin-right: 30px;
+        nav > div {
+            display: flex;
+            align-items: center;
         }
+
+        .navA {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .navBtn {
+            margin-left: 49px;
+        }
+
+        /*nav > div > a {*/
+        /*    gap: 30px;*/
+        /*}*/
 
         h1 {
             font-size: 48px;
@@ -296,10 +311,12 @@
         <nav>
             <img src="./img/bell_b.JPG" alt="벨로고" width="130px" height="40px">
             <div>
-            <a href="#" >Home</a>
-            <a href="#" >About</a>
-            <a href="#" >Support</a>
-            <button>Download</button>
+                <div class="navA">
+                <a href="#" >Home</a>
+                <a href="#" >About</a>
+                <a href="#" >Support</a>
+                </div>
+                <div class="navBtn"><button>Download</button></div>
             </div>
         </nav>
         <div>
