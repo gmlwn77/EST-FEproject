@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>mobile</title>
-    <link href="./menu.html" >
     <style>
         a {
             color: inherit;
@@ -77,7 +76,7 @@
             width: 326px;
             height: 190px;
             border-radius: 18px;
-            box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.25);
         }
 
         h2 {
@@ -327,30 +326,30 @@
 <body>
     <header>
       <nav>
-        <img src="./img/bell_b.JPG" alt="벨 로고"
-        width="92px" height="28px" >
-        <img id="toggleBtn" src="./img/menu.png" alt="메뉴"
-        width="32px" height="32px">
+        <img src="./img/bell_b.JPG" alt="벨 로고" width="92px" height="28px" >
+        <img id="toggleBtn" src="./img/menu.png" alt="메뉴" width="32px" height="32px">
       </nav>
 
-        <div id="navMenu" class="navMenu">
-            <section>
-                <a id="backBtn" href="#"><img src="./img/arrow-right.png" alt="오른쪽 화살표 표시"></a>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Support</a></li>
-                </ul>
-                <button>Download</button>
-            </section>
-        </div>
+       <div id="navMenu" class="navMenu">
+           <section>
+               <a id="backBtn" href="#"><img src="./img/arrow-right.png" alt="오른쪽 화살표 표시"></a>
+               <ul>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Support</a></li>
+               </ul>
+               <button>Download</button>
+           </section>
+       </div>
 
         <script>
+<!--            toggleBtn 클릭 시 메뉴바 나오게 하기 -->
             document.getElementById('toggleBtn').addEventListener('click', function() {
                 const drawer = document.getElementById('navMenu');
                 drawer.classList.toggle('open');
             });
 
+            // backBtn 클릭 시 메뉴바 들어가고 기존 mobile.html 화면 뜨게 하기
             document.getElementById('backBtn').addEventListener('click', function() {
                 const drawer = document.getElementById('navMenu');
                 drawer.classList.toggle('open');
@@ -412,6 +411,7 @@
     </section>
 
     <script>
+<!--        emailBtn 클릭 시 modal_mobile.html로 입력 메일 전달 및 페이지 이동 -->
         document.getElementById('emailBtn').addEventListener('click', emailSubmit);
         function emailSubmit() {
             const email = document.getElementById("email");
