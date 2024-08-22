@@ -10,7 +10,18 @@
             text-decoration: none;
         }
 
-        section {
+        .navMenu {
+            position: fixed;
+            top: 0;
+            left: -289px;
+            z-index: 10;
+        }
+
+        .navMenu.open {
+            left: 101px;
+        }
+
+        .navMenu > section {
             width: 289px;
             height: 820px;
             display: flex;
@@ -18,25 +29,30 @@
             background-color: rgba(38, 49, 64, 1);
         }
 
-        section > a > img {
+        .navMenu > section > a > img {
             width: 32px;
             height: 32px;
             margin: 22px 0 0 20px;
         }
 
-        div {
+        ul {
             display: flex;
             flex-direction: column;
             margin: 120px 0 50px 50px;
             gap: 30px;
         }
 
-        div > a {
+        ul > li > a {
             font-size: 16px;
             color: white;
         }
 
-        button {
+        ul, li {
+            list-style: none;
+            padding: 0;
+        }
+
+        .navMenu > section >  button {
             width: 114px;
             height: 40px;
             background-color: #D97652;
@@ -47,17 +63,20 @@
             padding: 11px 24px;
             margin-left: 40px;
         }
+
     </style>
 </head>
 <body>
+<div id="navMenu" class="navMenu">
     <section>
-        <a href="#"><img src="./img/arrow-right.png" alt="오른쪽 화살표 표시"></a>
-        <div>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Support</a>
-        </div>
+        <a id="backBtn" href="#"><img src="./img/arrow-right.png" alt="오른쪽 화살표 표시"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
         <button>Download</button>
     </section>
+</div>
 </body>
 </html>

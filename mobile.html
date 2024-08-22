@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>mobile</title>
+    <link href="./menu.html" >
     <style>
         a {
             color: inherit;
@@ -211,6 +212,7 @@
             width: 144px;
             height: 16px;
             font-size: 12px;
+            border: 0;
         }
 
         #emailBtn {
@@ -262,6 +264,64 @@
             margin: 30px 22px 28px 0;
         }
 
+    /*    여기까지 footer  */
+
+        .navMenu {
+            position: fixed;
+            top: 0;
+            left: -289px;
+            z-index: 10;
+        }
+
+        .navMenu.open {
+            left: 101px;
+        }
+
+        .navMenu > section {
+            width: 289px;
+            height: 820px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(38, 49, 64, 1);
+        }
+
+        .navMenu > section > a > img {
+            width: 32px;
+            height: 32px;
+            margin: 22px 0 0 20px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            margin: 120px 0 50px 50px;
+            gap: 30px;
+        }
+
+        ul > li > a {
+            font-size: 16px;
+            color: white;
+        }
+
+        ul, li {
+            list-style: none;
+            padding: 0;
+        }
+
+        .navMenu > section >  button {
+            width: 114px;
+            height: 40px;
+            background-color: #D97652;
+            border: solid #D97652;
+            border-radius: 40px;
+            color: white;
+            font-size: 14px;
+            padding: 11px 24px;
+            margin-left: 40px;
+        }
+
+    /*    여기까지 varMenu */
+
     </style>
 </head>
 <body>
@@ -269,9 +329,33 @@
       <nav>
         <img src="./img/bell_b.JPG" alt="벨 로고"
         width="92px" height="28px" >
-        <img src="./img/menu.png" alt="메뉴"
+        <img id="toggleBtn" src="./img/menu.png" alt="메뉴"
         width="32px" height="32px">
       </nav>
+
+        <div id="navMenu" class="navMenu">
+            <section>
+                <a id="backBtn" href="#"><img src="./img/arrow-right.png" alt="오른쪽 화살표 표시"></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+                <button>Download</button>
+            </section>
+        </div>
+
+        <script>
+            document.getElementById('toggleBtn').addEventListener('click', function() {
+                const drawer = document.getElementById('navMenu');
+                drawer.classList.toggle('open');
+            });
+
+            document.getElementById('backBtn').addEventListener('click', function() {
+                const drawer = document.getElementById('navMenu');
+                drawer.classList.toggle('open');
+            });
+        </script>
 
       <h1>Lorem Ipsum is simply <br>dummy text<br>of the printing and</h1>
       <span>Lorem Ipsum is simply dummy text<br>of the printing and typesetting industry.
