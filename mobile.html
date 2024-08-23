@@ -321,6 +321,65 @@
 
     /*    여기까지 varMenu */
 
+        body.no-scroll {
+            overflow: hidden;
+        }
+
+        #submitForm {
+            position: fixed;
+            display: none;
+        }
+
+        #submitForm.open {
+            display: flex;
+            z-index: 20;
+        }
+
+        .subForm {
+            background-image: url("./img/back.png");
+            background-size: 300px 200px;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-color: rgba(242, 233, 216, 1);
+            width: 300px;
+            height: 300px;
+            margin: 40px 0 0 45px;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .subForm > img {
+            width: 60px;
+            height: 62px;
+            margin-top: 40px;
+        }
+
+        #thank {
+            font-size: 24px;
+            color: rgba(217, 118, 82, 1);
+            margin-top: 24px;
+            margin-bottom: 10px;
+            font-weight: bolder;
+        }
+
+        #lo {
+            font-size: 14px;
+        }
+
+        #submitBtn {
+            background-color: #D97652;
+            width: 158px;
+            height: 40px;
+            border: #D97652;
+            border-radius: 40px;
+            color: white;
+            font-size: 14px;
+            padding: 11px 24px;
+            margin-top: 28px;
+        }
+
     </style>
 </head>
 <body>
@@ -410,14 +469,33 @@
         <img src="./img/bell7.jpeg" alt="벨이 가까이서 웃고있는 사진">
     </section>
 
+    <section id="submitForm">
+        <div class="subForm">
+            <img src="./img/bell10.JPG" alt="선글라스 낀 벨 사진">
+            <span id="thank">Thank you!</span>
+            <span id="lo">Lorem Ipsum is simply dummy<br>text of the printing industry. </span>
+            <button id="submitBtn">OK! I Love BELL</button>
+        </div>
+    </section>
+
     <script>
-<!--        emailBtn 클릭 시 modal_mobile.html로 입력 메일 전달 및 페이지 이동 -->
+<!--        emailBtn 클릭 시 모달창 나옴 -->
         document.getElementById('emailBtn').addEventListener('click', emailSubmit);
         function emailSubmit() {
-            const email = document.getElementById("email");
-            localStorage.setItem('email', email.value);
-            window.location.href = 'modal_mobile.html';
+            const drawer = document.getElementById('submitForm');
+            drawer.classList.toggle('open');
+            document.body.classList.add("no-scroll");
         }
+
+        // submitBtn 클릭 시 모달창 내려가고 기존 화면만 보임
+        document.getElementById('submitBtn').addEventListener('click', submitEmail);
+        function submitEmail() {
+            const drawer = document.getElementById('submitForm');
+            drawer.classList.toggle('open');
+            document.body.classList.remove("no-scroll");
+            document.getElementById("email").value = "";
+        }
+
     </script>
 
     <footer>
