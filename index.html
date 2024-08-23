@@ -73,10 +73,6 @@
             margin-left: 49px;
         }
 
-        /*nav > div > a {*/
-        /*    gap: 30px;*/
-        /*}*/
-
         h1 {
             font-size: 48px;
             margin-top: 302px;
@@ -309,6 +305,56 @@
             height: 50px;
         }
 
+    /*    여기까지 스크롤 탑 */
+
+
+        body.no-scroll {
+            overflow: hidden;
+        }
+
+        #submitForm {
+            position: fixed;
+            display: none;
+        }
+
+        #submitForm.open {
+            display: block;
+            z-index: 20;
+        }
+        .subForm {
+            background-image: url("./img/back.png");
+            width: 600px;
+            height: 400px;
+            margin: 250px 650px 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 30px;
+        }
+        .subForm > img {
+            width: 110px;
+            height: 112px;
+            margin: 60px 245px 0 245px;
+        }
+        .subForm > h1 {
+            color: #D97652;
+            font-size: 36px;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+        .subForm > span {
+            font-size: 14px;
+            margin-bottom: 38px;
+        }
+        .subForm > button {
+            background-color: #D97652;
+            width: 183px;
+            height: 50px;
+            border: #D97652;
+            border-radius: 40px;
+            color: white;
+            font-size: 16px;
+        }
 
     </style>
 </head>
@@ -409,10 +455,20 @@
         </section>
         <img id="bell7" src="./img/bell7.jpeg" width="1920px" height="340px" alt="가까이서 찍은 벨 사진" />
     </section>
+
+    <section id="submitForm">
+        <div class="subForm">
+            <img src="./img/bell10.JPG" alt="선글라스 낀 벨 사진">
+            <h1>Thank you!</h1>
+            <span>Lorem Ipsum is simply dummy text of the printing industry. </span>
+            <button id="submitBtn">OK! I Love BELL</button>
+        </div>
+    </section>
+
     <script>
+        const email = document.getElementById("email");
         // 이메일 유효성 검사
         function emailCheck() {
-            const email = document.getElementById("email");
             const valid_txt = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
 
             if(email.value === "") {
@@ -425,10 +481,20 @@
                 console.log(email);
                 email.focus();
             } else {
-                localStorage.setItem('email', email.value);
-                // 페이지 이동
-                window.location.href = 'modal.html';
+                const drawer = document.getElementById('submitForm');
+                drawer.classList.toggle('open');
+                document.body.classList.add("no-scroll");
+                return email;
             }
+        }
+
+        document.getElementById('submitBtn').addEventListener('click', submitEmail);
+        function submitEmail() {
+            const drawer = document.getElementById('submitForm');
+            drawer.classList.toggle('open');
+            alert(`${email.value}입력 완료`);
+            document.body.classList.remove("no-scroll");
+            document.getElementById("email").value = "";
         }
     </script>
 
