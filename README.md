@@ -80,7 +80,9 @@
 ## 7. 메인 기능
 
 - email 입력 후 subscribe 버튼 클릭 시 이메일 유효성 검사
+  
     검사 통과 실패하면 email 재입력 필요
+  
     검사 통과하면 모달창 생성되며, Ok! I LOVE BELL 클릭해서 데이터 전송 후 모달창 제거
   
   <img width="236" alt="모달 기능" src="https://github.com/user-attachments/assets/bd5bd526-5aa2-4b5c-879f-0b0470a1e75c">
