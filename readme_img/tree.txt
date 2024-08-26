@@ -1,0 +1,35 @@
+./IdeaProjects/project1
+├── img
+│   ├── arrow-right.png
+│   ├── back.png
+│   ├── bell1.jpeg
+│   ├── bell10.JPG
+│   ├── bell2.jpeg
+│   ├── bell3.jpeg
+│   ├── bell4.jpeg
+│   ├── bell5.jpeg
+│   ├── bell6.jpeg
+│   ├── bell7.jpeg
+│   ├── bell8.JPG
+│   ├── bell9.jpeg
+│   ├── bell_b.JPG
+│   ├── bell_white.JPG
+│   ├── blog.png
+│   ├── facebook.png
+│   ├── instagram.png
+│   ├── mail.png
+│   ├── menu.png
+│   ├── scroll-top-btn-b.png
+│   ├── scroll-top-btn.png
+│   ├── youtube.png
+│   └── 고양이 1.png
+├── index.html
+├── menu.html
+├── mobile.html
+├── modal.html
+├── modal_mobile.html
+├── reset.css
+├── 개발일정.png
+└── 요구사항명세.png
+
+2 directories, 31 files
