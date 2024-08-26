@@ -32,13 +32,21 @@
 ### 4.1 프로젝트 구조
 
 📂 project1
+
   ├──📂 img
+  
   ├──📂 readme_img
+  
   ├──📄 index.html 
+  
   ├──📄menu.html
+  
   ├──📄 mobile.html
+  
   ├──📄 modal.html
+  
   ├──📄 modal_mobile.html
+  
   └──📄 reset.css
   
 
@@ -63,13 +71,10 @@
 |------|---|
 |<img width="479" alt="index1" src="https://github.com/user-attachments/assets/2279bd97-a837-441f-9142-c2db892c7602">|[<img width="479" alt="index2" src="https://github.com/user-attachments/assets/8b056574-7ddb-4085-889b-0a6169cb4185">|
 |modal 창|mobile 1|
-|------|---|
 |<img width="432" alt="modal" src="https://github.com/user-attachments/assets/c912439a-0808-4fca-a314-ac6ccd93cae6">|<img width="194" alt="mobile1" src="https://github.com/user-attachments/assets/9c2cee1d-bfb1-4a61-8b72-baa73e37c731">|
 |mobile 2|mobile 3|
-|------|---|
 |<img width="132" alt="mobile2" src="https://github.com/user-attachments/assets/a0ac04f8-9eb0-4419-b98f-200b979c47ce">|<img width="132" alt="mobile3" src="https://github.com/user-attachments/assets/ba691b6d-d0c4-4079-8f98-f5df50359efe">|
 |mobile - modal|menu|
-|------|---|
 |<img width="418" alt="mobile-modal" src="https://github.com/user-attachments/assets/30a81a37-1098-49d1-b2e2-7dc043205abd">|<img width="293" alt="menu" src="https://github.com/user-attachments/assets/cc88cad1-4d4e-4b22-b353-a61839e844bb">|
 
 ## 7. 메인 기능
@@ -77,6 +82,7 @@
 - email 입력 후 subscribe 버튼 클릭 시 이메일 유효성 검사
     검사 통과 실패하면 email 재입력 필요
     검사 통과하면 모달창 생성되며, Ok! I LOVE BELL 클릭해서 데이터 전송 후 모달창 제거
+  
   <img width="236" alt="모달 기능" src="https://github.com/user-attachments/assets/bd5bd526-5aa2-4b5c-879f-0b0470a1e75c">
 
 ## 8. 에러와 에러 해결
