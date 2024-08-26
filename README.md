@@ -25,6 +25,8 @@
 
 ## 3. 요구사항 명세와 기능 명세
 
+[요구사항 명세와 기능 명세] https://github.com/gmlwn77/project1/blob/main/readme_img/%E1%84%8B%E1%85%AD%E1%84%80%E1%85%AE%E1%84%89%E1%85%A1%E1%84%92%E1%85%A1%E1%86%BC%E1%84%86%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A6.png
+
 ## 4. 프로젝트 구조와 개발 일정
 
 ### 4.1 프로젝트 구조
@@ -48,6 +50,8 @@
 
 ### 4.2 개발 일정 (WBS)
 
+[개발일정] (https://github.com/gmlwn77/project1/blob/main/readme_img/%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%BC.png)
+
 ## 5. 역할 분담
 
 - 팀장: 박희주
@@ -57,22 +61,29 @@
 
 ### 6.1 와이어프레임
 
+[와이어프레임] (https://github.com/gmlwn77/project1/blob/main/readme_img/%E1%84%8B%E1%85%AA%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%E1%84%91%E1%85%B3%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%B7.png)
+
 ### 6.2 화면 설계
 
-index.html 1
-index.html 2
-modal 창
-mobile 1
-mobile 2
-mobile 3
-mobile - modal
-menu
+|index.html 1|index.html 2|
+|------|---|
+|[index.html 1](https://github.com/gmlwn77/project1/blob/main/readme_img/index1.png)|[index.html 2](https://github.com/gmlwn77/project1/blob/main/readme_img/index2.png)|
+|modal 창|mobile 1|
+|------|---|
+|[modal 창](https://github.com/gmlwn77/project1/blob/main/readme_img/modal.png)|[mobile 1](https://github.com/gmlwn77/project1/blob/main/readme_img/mobile1.png)|
+|mobile 2|mobile 3|
+|------|---|
+|[mobile 2](https://github.com/gmlwn77/project1/blob/main/readme_img/mobile2.png)|[mobile 3](https://github.com/gmlwn77/project1/blob/main/readme_img/mobile3.png)|
+|mobile - modal|menu|
+|------|---|
+|[mobile - modal](https://github.com/gmlwn77/project1/blob/main/readme_img/mobile-modal.png)|[menu](https://github.com/gmlwn77/project1/blob/main/readme_img/menu.png)|
 
 ## 7. 메인 기능
 
 - email 입력 후 subscribe 버튼 클릭 시 이메일 유효성 검사
     검사 통과 실패하면 email 재입력 필요
     검사 통과하면 모달창 생성되며, Ok! I LOVE BELL 클릭해서 데이터 전송 후 모달창 제거
+  [모달 기능] https://github.com/gmlwn77/project1/blob/main/readme_img/%E1%84%86%E1%85%A9%E1%84%83%E1%85%A1%E1%86%AF%20%E1%84%80%E1%85%B5%E1%84%82%E1%85%B3%E1%86%BC.png
 
 ## 8. 에러와 에러 해결
   
