@@ -68,8 +68,8 @@
 ### 6.2 화면 설계
 
 |index.html 1|index.html 2|
-|------|---|
-|<img width="479" alt="index1" src="https://github.com/user-attachments/assets/2279bd97-a837-441f-9142-c2db892c7602">|[<img width="479" alt="index2" src="https://github.com/user-attachments/assets/8b056574-7ddb-4085-889b-0a6169cb4185">|
+|:------:|:---:|
+|<img width="479" alt="index1" src="https://github.com/user-attachments/assets/2279bd97-a837-441f-9142-c2db892c7602">|<img width="479" alt="index2" src="https://github.com/user-attachments/assets/8b056574-7ddb-4085-889b-0a6169cb4185">|
 |modal 창|mobile 1|
 |<img width="432" alt="modal" src="https://github.com/user-attachments/assets/c912439a-0808-4fca-a314-ac6ccd93cae6">|<img width="194" alt="mobile1" src="https://github.com/user-attachments/assets/9c2cee1d-bfb1-4a61-8b72-baa73e37c731">|
 |mobile 2|mobile 3|
