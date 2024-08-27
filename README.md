@@ -103,7 +103,7 @@
     
     ```jsx
     <input name="email" id="email" type="email" placeholder="Enter your e-mail address" required/>
-    const email = *localStorage*.getItem('email');
+    const email = document.getElementById("email");
     ```
 
 
