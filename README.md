@@ -13,18 +13,29 @@
 
 - 박희주
 
+---
 
-## 2. 개발 환경
+## 2. 개발 환경 및 배포 URL
+
+### 2.1 개발 환경
 
 - HTML
 - CSS
 - JavaScript
 - GitHub
 
+### 2.2 배포 URL
+
+- web: https://gmlwn77.github.io/project1/
+- mobile: https://gmlwn77.github.io/project1/mobile.html
+
+---
 
 ## 3. 요구사항 명세와 기능 명세
 
 <img width="1025" alt="요구사항명세" src="https://github.com/user-attachments/assets/d801b326-0f18-4fbe-b36d-c3e49575f252">
+
+---
 
 ## 4. 프로젝트 구조와 개발 일정
 
@@ -39,16 +50,19 @@
   ├──📄 modal.html \
   ├──📄 modal_mobile.html \
   └──📄 reset.css
-  
 
 ### 4.2 개발 일정 (WBS)
 
 <img width="1381" alt="개발일정" src="https://github.com/user-attachments/assets/bdea366b-b93a-433a-a384-b0315f892b7c">
 
+---
+
 ## 5. 역할 분담
 
 - 팀장: 박희주
 - FE: 박희주
+
+---
 
 ## 6. 와이어프레임 / UI / BM
 
@@ -68,6 +82,8 @@
 |mobile - modal|menu|
 |<img width="418" alt="mobile-modal" src="https://github.com/user-attachments/assets/30a81a37-1098-49d1-b2e2-7dc043205abd">|<img width="293" alt="menu" src="https://github.com/user-attachments/assets/cc88cad1-4d4e-4b22-b353-a61839e844bb">|
 
+---
+
 ## 7. 메인 기능
 
 - email 입력 후 subscribe 버튼 클릭 시 이메일 유효성 검사
@@ -77,6 +93,8 @@
     검사 통과하면 모달창 생성되며, Ok! I LOVE BELL 클릭해서 데이터 전송 후 모달창 제거
   
   <img width="236" alt="모달 기능" src="https://github.com/user-attachments/assets/bd5bd526-5aa2-4b5c-879f-0b0470a1e75c">
+
+---
 
 ## 8. 에러와 에러 해결
   
@@ -97,7 +115,10 @@
     const email = *localStorage*.getItem('email');
     ```
 
+---
+
 ## 9. 개발하며 느낀점
 
 - html/css 사용이 익숙하지 않아 더 깔끔한 코드를 만들지 못한 것 같아 아쉽습니다.
 - javascript를 활용해서 다양한 기능을 가능하게 한다는 점이 흥미로웠습니다.
+- 깃허브에서 branch 사용이 어려워 연습이 필요하다고 생각합니다.
